@@ -1,5 +1,5 @@
 defmodule RustlerMjml.Native do
-  version = "0.0.2"
+  version = Mix.Project.config()[:version]
 
   use RustlerPrecompiled,
     otp_app: :rustler_mjml,
