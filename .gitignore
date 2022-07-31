@@ -28,5 +28,3 @@ rustler_mjml-*.tar
 .elixir_ls
 
 priv/native
-
-checksum-*
