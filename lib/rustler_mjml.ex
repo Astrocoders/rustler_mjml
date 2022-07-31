@@ -1,5 +1,3 @@
 defmodule RustlerMjml do
-  use Rustler, otp_app: :rustler_mjml, crate: "mjml"
-
-  def to_html(_a), do: :erlang.nif_error(:nif_not_loaded)
+  def to_html(content), do: RustlerMjml.Native.to_html(content)
 end
